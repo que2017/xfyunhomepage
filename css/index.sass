@@ -1,0 +1,521 @@
+*
+  padding: 0
+  margin: 0
+ul li
+  list-style: none
+a
+  text-decoration: none
+  color: #000
+.clearfix:after
+  content: ''
+  display: block
+  height: 0
+  clear: both
+/*小标题公共样式*/
+.ai-title
+  width: 100%
+  .title-top
+    width: 100%
+    font-size: 24px
+    text-align: center
+    font-weight: 500
+    &:before
+      content: '{ '
+      color: #2277e6
+    &:after
+      content: ' }'
+      color: #2277e6
+  .title-info
+    width: 100%
+    margin-top: 18px
+    color: #a7a7a8
+    font-size: 16px
+    text-align: center
+/*轮播图*/
+.banner
+  width: 100%
+  height: 575px
+  background: url('../images/banner.jpg') no-repeat bottom center
+/*公告区*/
+.notice
+  width: 100%
+  height: 112px
+  border-bottom: 1px solid #dedfe1
+  background: #f7f8fa
+  .notice-wrap
+    width: 1200px
+    height: 100%
+    margin: 0 auto
+    .notice-elem
+      display: block
+      box-sizing: border-box
+      float: left
+      width: 300px
+      height: 100%
+      padding: 20px 0 0 28px
+      border-left: 1px solid #dedfe1
+      .elem-link
+        display: block
+        width: 100%
+        height: 100%
+        .day
+          font-size: 15px
+          margin-bottom: 8px
+        .title
+          position: relative
+          font-size: 16px
+          .icon
+            position: absolute
+            right: -35px
+            top: -15px
+            height: 14px
+            padding: 0 2px
+            color: #fd7822
+            border: 1px solid
+            font-size: 12px
+            font-style: normal
+            text-align: center
+            line-height: 14px
+            &:before
+              content: ''
+              position: absolute
+              left: 5px
+              bottom: -6px
+              width: 6px
+              height: 5px
+              border-left: 1px solid
+              border-top: 1px solid #fff
+            &:after
+              content: ''
+              position: absolute
+              left: 5px
+              bottom: -4px
+              width: 8px
+              border-top: 1px solid
+              transform: rotateZ(-38deg)
+        .info
+          margin-top: 8px
+          color: #a7a7a8
+          font-size: 12px
+      &:hover
+        background: #fff
+        .title
+          color: #2277e6
+    .last
+      border-right: 1px solid #dedfe1
+/*一键接入AI技术*/
+.ai-teck
+  width: 1200px
+  margin: 60px auto 0 auto
+  .teck-context
+    width: 100%
+    height: 620px
+    margin-top: 50px
+    .context-show
+      float: left
+      box-sizing: border-box
+      width: 386px
+      height: 300px
+      margin-top: 20px
+      overflow: hidden
+      background: url('../images/ai-teck/136-340x400.jpg') 186px 75px no-repeat
+      background-size: 200px
+      .show-wrap
+        width: 100%
+        height: 100%
+        padding: 18px 0 0 16px
+        background: linear-gradient(to right,rgba(34,119,230,1),rgba(34,119,230,0.9))
+        .show-server
+          display: block
+          box-sizing: border-box
+          height: 90px
+          padding: 24px 0 0 15px
+          border-left: 2px solid transparent
+          .server-name
+            height:  22px
+            color: #fff
+            font-size: 14px
+            line-height: 22px
+            .icon-speech-synth
+              display: inline-block
+              vertical-align: middle
+              width: 22px
+              height: 22px
+              margin-right: 8px
+              background: url('../images/icons.png') -26px -10px
+          .sever-info
+            margin: 8px 0 0 30px
+            color: #ccc
+            font-size: 12px
+          &:hover
+            border-left: 2px solid #fff
+            background: linear-gradient(to right,rgba(255,255,255,0.1),rgba(255,255,255,0))
+    .sever-item
+      float: left
+      box-sizing: border-box
+      width: 386px
+      height: 300px
+      padding-top: 18px
+      margin: 20px 0 0 20px
+      box-shadow: 0 0 4px #ccc
+      overflow: hidden
+      .sever
+        width: 334px
+        margin: 0 auto
+        border-top: 4px solid #5acfec
+        .sever-logo
+          width: 54px
+          height: 54px
+          margin: 25px auto 10px auto
+          background-image: url('../images/icons.png')
+        .sever-title
+          color: #000
+          font-size: 22px
+          font-weight: 500
+          text-align: center
+        .sever-info
+          margin-top: 10px
+          color: #a7a7a8
+          font-size: 14px
+          text-align: center
+        .voice-recog-logo
+          background-position: -295px -112px
+        .speech-exten-logo
+          background-position: -213px -187px
+        .speech-hardware-logo
+          background-position: -211px -108px
+        .pattern-recog-logo
+          background-position: -296px -187px
+        .basic-service-logo
+          background-position: -209px -34px
+      .special-border
+        position: relative
+        border-top: 4px solid #1fb6ff
+        &:before
+          content: ''
+          position: absolute
+          left: 0
+          top: -4px
+          width: 36px
+          border-top: 4px solid #1788be
+        &:after
+          content: ''
+          position: absolute
+          right: 0
+          top: -4px
+          width: 36px
+          border-top: 4px solid #1788be
+      .sever-detail
+        width: 312px
+        height: 90px
+        margin: 25px auto 0 auto
+        border-top: 1px dashed #ccc
+        .detail-list
+          float: left
+          width: 104px
+          height: 100%
+          .list-link
+            display: block
+            width: 100%
+            height: 66px
+            padding-top: 24px
+            color: #666
+            text-align: center
+            .icon
+              display: block
+              width: 36px
+              height: 30px
+              margin: 0 auto
+              background-image: url('../images/icons.png')
+            .list
+              display: block
+              margin-top: 12px
+              font-size: 14px
+              text-align: center
+            &:hover
+              background: rgba(200,200,200,0.3)
+          .icon-voice
+            background-position: -87px -14px
+          .icon-face-recog
+            background-position: -152px -61px
+          .icon-dialog
+            background-position: -88px -62px
+          .icon-wakeup
+            background-position: -90px -102px
+          .icon-reading
+            background-position: -89px -152px
+          .icon-evaluation
+            background-position: -86px -212px
+          .icon-ai-head
+            background-position: -152px -15px
+          .icon-voiceprint-recog
+            background-position: -152px -105px
+          .icon-storage
+            background-position: -150px -158px
+          .icon-xunpush
+            background-position: -152px -210px
+          .icon-update
+            background-position: -23px -214px
+    .speech-recog-bg
+      background: url('../images/ai-teck/speech-recognition.png') 52px 0/381px no-repeat
+    .speech-exten-bg
+      background: url('../images/ai-teck/speech-extensions.png') 99px 0/312px no-repeat
+      .sever
+        border-top: 4px solid #ff7849
+    .speech-hardware-bg
+      margin-left: 0
+      background: url('../images/ai-teck/speech-hardware.png') 66px 0/320px no-repeat
+      .sever
+        border-top: 4px solid #00ce8c
+    .pattern-recog-bg
+      background: url('../images/ai-teck/pattern-recognition.png') 138px 0/248px no-repeat
+    .basic-service-bg
+      background: url('../images/ai-teck/basic-service.png') 84px 0/301px no-repeat
+      .sever
+        border-top: 4px solid #7e5bef
+/*AI解决方案*/
+.ai-solution
+  width: 100%
+  margin-top: 145px
+  .solution-wrap
+    width: 100%
+    margin-top: 64px
+    background: #292929
+    .list-wrap
+      width: 1200px
+      height: 520px
+      margin: 0 auto
+      border: 1px solid #ccc
+      .solution-item
+        position: relative
+        float: left
+        box-sizing: border-box
+        width: 300px
+        height: 260px
+        border: 1px solid #ccc
+        color: #fff
+        &:hover
+          .item-name
+            display: none
+          .item-hide
+            top: 0
+            visibility: visible
+        .item-name
+          height: 260px
+          font-size: 24px
+          text-align: center
+          line-height: 260px
+        .item-hide
+          position: absolute
+          visibility: hidden
+          top: 100%
+          left: -1px
+          width: 298px
+          height: 258px
+          border: 1px solid transparent
+          background: rgba(31,83,190,0.65)
+          transition: top 0.3s linear
+          .name
+            padding-top: 36px
+            margin-bottom: 24px
+            font-size: 24px
+            text-align: center
+          .introduce
+            padding: 0 24px
+            margin-bottom: 40px
+            font-size: 12px
+            line-height: 24px
+          .detail
+            display: block
+            box-sizing: border-box
+            width: 135px
+            height: 40px
+            margin: 0 auto
+            border: 1px solid #fff
+            border-radius: 4px
+            color: #fff
+            font-size: 12px
+            text-align: center
+            line-height: 40px
+
+/*AI生态平台*/
+.ai-ecol-platform
+  position: relative
+  width: 1200px
+  padding: 100px 0 64px 0
+  margin: 0 auto
+  background: #fff
+  .ai-title
+    margin-bottom: 64px
+  .introduce
+    float: left
+    box-sizing: border-box
+    width: 580px
+    height: 470px
+    background: url('../images/ecol-platform/introduce-bg.png') no-repeat
+    background-size: 100% 100%
+    .list-wrap
+      box-sizing: border-box
+      width: 100%
+      height: 100%
+      padding: 40px 0 0 50px
+      background: rgba(38,38,38,0.7)
+      .intro-list
+        display: block
+        height: 50px
+        margin-bottom: 25px
+        .list
+          display: block
+          height: 100%
+          .icon
+            float: left
+            width: 32px
+            height: 32px
+            margin: 0 18px 18px 0
+            background: #ccc
+          .content
+            float: left
+            height: 50px
+            font-size: 14px
+            .title
+              margin-bottom: 10px
+              color: #3770bd
+            .info
+              color: #fff
+  .nephogram
+    float: left
+    width: 580px
+    height: 470px
+    margin-left: 40px
+    color: #fff
+    background: url('../images/ecol-platform/nebula.png') no-repeat
+    background-size: 100% 100%
+    .title
+      padding: 154px 0 28px 0
+      font-size: 32px
+      font-weight: 500
+      text-align: center
+    .info
+      padding: 0 60px
+      font-size: 14px
+      line-height: 24px
+
+/*技术优势*/
+.teck-advantage
+  position: relative
+  box-sizing: border-box
+  width: 100%
+  height: 756px
+  background: rgba(22,34,97,0.4)
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: url('../images/teck-advantage/bg25.png') bottom center/1920px 817px no-repeat
+  .ai-title
+    padding-top: 100px
+    .title-top
+      color: #fff
+    .title-info
+      color: #a2a5b6
+  .features
+    position: relative
+    width: 1200px
+    margin: 120px auto 0 auto
+    .feature
+      position: relative
+      height: 120px
+      margin-bottom: 130px
+      .detail
+        float: left
+        width: 294px
+        .title
+          color: #fff
+          font-size: 20px
+          font-weight: 500
+          text-align: right
+        .info
+          margin-top: 28px
+          color: #a2a5b6
+          font-size: 14px
+          line-height: 24px
+      .icon
+        float: right
+        width: 60px
+        height: 75px
+        background: #ccc
+      .line
+        position: absolute
+        width: 110px
+        height: 1px
+        background: linear-gradient(to right,rgba(255,255,255,1),rgba(255,255,255,0))
+        &:before
+          content: ''
+          position: absolute
+          top: -3px
+          left: -9px
+          width: 6px
+          height: 6px
+          border: 1px solid #fff
+          border-radius: 50%
+      .left-top
+        right: -94px
+        bottom: 18px
+        transform: rotateZ(-145deg)
+      .left-bottom
+        right: -94px
+        top: -26px
+        transform: rotateZ(145deg)
+      .right-top
+        left: -93px
+        bottom: 18px
+        transform: rotateZ(-35deg)
+      .right-bottom
+        left: -93px
+        top: -26px
+        transform: rotateZ(35deg)
+    .left-part
+      float: left
+      width: 386px
+      margin-left: 10px
+    .right-part
+      float: right
+      width: 386px
+      margin-right: 10px
+      .detail
+        float: right
+        .title
+          text-align: left
+      .icon
+        float: left
+    .center-circle
+      position: absolute
+      top: 52px
+      left: 50%
+      width: 219px
+      height: 219px
+      margin-left: -110px
+      border: 1px solid #fff
+      border-radius: 50%
+
+/*合作伙伴*/
+.partners
+  width: 100%
+  height: 630px
+  margin-top: 112px
+  .title-info
+    line-height: 30px
+  .partner-wrap
+    width: 1800px
+    height: 300px
+    margin-top: 80px
+    .name
+      float: left
+      width: 300px
+      height: 100px
+      margin-bottom: 50px
+
