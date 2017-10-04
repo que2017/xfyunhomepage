@@ -278,9 +278,44 @@ a
   width: 100%
   margin-top: 145px
   .solution-wrap
+    position: relative
     width: 100%
     margin-top: 64px
     background: #292929
+    .blur-circle
+      position: absolute
+      border-radius: 50%
+      background: #3c3c3c
+    .radius-80
+      top: 85px
+      left: 90px
+      width: 80px
+      height: 80px
+      box-shadow: 0 0 10px 5px #3c3c3c
+    .radius-24
+      top: 220px
+      left: 20px
+      width: 24px
+      height: 24px
+      box-shadow: 0 0 10px 5px #3c3c3c
+    .radius-10
+      top: 295px
+      left: 270px
+      width: 10px
+      height: 10px
+      box-shadow: 0 0 7px 3px #3c3c3c
+    .radius-64
+      top: 84px
+      right: 84px
+      width: 64px
+      height: 64px
+      box-shadow: 0 0 10px 5px #3c3c3c
+    .radius-20
+      top: 260px
+      right: 230px
+      width: 20px
+      height: 20px
+      box-shadow: 0 0 10px 5px #3c3c3c
     .list-wrap
       width: 1200px
       height: 520px
@@ -337,68 +372,97 @@ a
             font-size: 12px
             text-align: center
             line-height: 40px
-
+      .aiui-bg
+        background: url('../images/ai-solution/aiui1.jpg')
+      .robot-bg
+        background: url('../images/ai-solution/robot.png')
+      .custom-service-bg
+        background: url('../images/ai-solution/custom-service.png')
+      .game-bg
+        background: url('../images/ai-solution/game.png')
+      .medical-bg
+        background: url('../images/ai-solution/medical.png')
+      .authentication-bg
+        background: url('../images/ai-solution/authentication.png')
+      .education-bg
+        background: url('../images/ai-solution/education.png')
+      .government-bg
+        background: url('../images/ai-solution/government.png')
 /*AI生态平台*/
 .ai-ecol-platform
   position: relative
-  width: 1200px
-  padding: 100px 0 64px 0
-  margin: 0 auto
-  background: #fff
-  .ai-title
-    margin-bottom: 64px
-  .introduce
-    float: left
-    box-sizing: border-box
-    width: 580px
-    height: 470px
-    background: url('../images/ecol-platform/introduce-bg.png') no-repeat
-    background-size: 100% 100%
-    .list-wrap
+  width: 100%
+  background: #fff url('../images/ai-ecol-platform-bg.png') top center/1920px auto no-repeat
+  .platform-wrap
+    width: 1200px
+    padding: 100px 0 64px 0
+    margin: 0 auto
+    .ai-title
+      margin-bottom: 64px
+    .introduce
+      float: left
       box-sizing: border-box
-      width: 100%
-      height: 100%
-      padding: 40px 0 0 50px
-      background: rgba(38,38,38,0.7)
-      .intro-list
-        display: block
-        height: 50px
-        margin-bottom: 25px
-        .list
+      width: 580px
+      height: 470px
+      background: url('../images/ecol-platform/introduce-bg.png') no-repeat
+      background-size: 100% 100%
+      .list-wrap
+        box-sizing: border-box
+        width: 100%
+        height: 100%
+        padding: 40px 0 0 50px
+        background: rgba(38,38,38,0.7)
+        .intro-list
           display: block
-          height: 100%
-          .icon
-            float: left
-            width: 32px
-            height: 32px
-            margin: 0 18px 18px 0
-            background: #ccc
-          .content
-            float: left
-            height: 50px
-            font-size: 14px
-            .title
-              margin-bottom: 10px
-              color: #3770bd
-            .info
-              color: #fff
-  .nephogram
-    float: left
-    width: 580px
-    height: 470px
-    margin-left: 40px
-    color: #fff
-    background: url('../images/ecol-platform/nebula.png') no-repeat
-    background-size: 100% 100%
-    .title
-      padding: 154px 0 28px 0
-      font-size: 32px
-      font-weight: 500
-      text-align: center
-    .info
-      padding: 0 60px
-      font-size: 14px
-      line-height: 24px
+          height: 50px
+          margin-bottom: 25px
+          .list
+            display: block
+            height: 100%
+            .icon
+              float: left
+              width: 35px
+              height: 32px
+              margin: 0 15px 18px 0
+              background-image: url('../images/icons.png')
+            .content
+              float: left
+              height: 50px
+              font-size: 14px
+              .title
+                margin-bottom: 10px
+                color: #3770bd
+              .info
+                color: #fff
+            .icon-news
+              background-position: -24px -39px
+            .icon-camp
+              background-position: -22px -76px
+            .icon-tutor
+              background-position: -22px -125px
+            .icon-connection
+              background-position: -23px -168px
+    .nephogram
+      float: left
+      width: 580px
+      height: 470px
+      margin-left: 40px
+      color: #fff
+      background: url('../images/ecol-platform/nebula.png') no-repeat
+      background-size: 100% 100%
+      .cover-bg
+        width: 100%
+        height: 100%
+        background: rgba(20,20,20,0.7)
+        .title
+          padding: 154px 0 28px 0
+          font-size: 32px
+          font-weight: 500
+          text-align: center
+        .info
+          padding: 0 60px
+          font-size: 14px
+          line-height: 24px
 
 /*技术优势*/
 .teck-advantage
@@ -445,9 +509,18 @@ a
           line-height: 24px
       .icon
         float: right
-        width: 60px
+        width: 62px
         height: 75px
-        background: #ccc
+        background-image: url(../images/icons.png)
+        background-repeat: no-repeat
+      .icon-location
+        background-position: -376px -12px
+      .icon-zip
+        background-position: -293px -17px
+      .icon-restart
+        background-position: -377px -91px
+      .icon-data-transfer
+        background-position: -378px -184px
       .line
         position: absolute
         width: 110px
@@ -499,8 +572,9 @@ a
       width: 219px
       height: 219px
       margin-left: -110px
-      border: 1px solid #fff
+      border: 1px solid #32cdf3
       border-radius: 50%
+      background: url('../images/yun.png') center 40px/192px auto no-repeat
 
 /*合作伙伴*/
 .partners
@@ -512,7 +586,7 @@ a
   .partner-wrap
     width: 1800px
     height: 300px
-    margin-top: 80px
+    margin: 80px auto 0 auto
     .name
       float: left
       width: 300px
