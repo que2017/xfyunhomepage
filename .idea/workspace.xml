@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f84c1d2c-842e-4de7-b2d1-ccb0c3c80a6b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aurora1.html" afterPath="$PROJECT_DIR$/aurora1.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,11 +55,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aurora.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aurora.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aurora.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+            <state relative-caret-position="88">
+              <caret line="125" column="13" lean-forward="false" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aurora1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aurora1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -154,6 +165,7 @@
         <option value="$PROJECT_DIR$/css/index.sass" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/aurora.html" />
+        <option value="$PROJECT_DIR$/aurora1.html" />
       </list>
     </option>
   </component>
@@ -235,14 +247,16 @@
       <workItem from="1507078572716" duration="6000" />
       <workItem from="1507080604372" duration="9057000" />
       <workItem from="1507440658244" duration="9140000" />
+      <workItem from="1507450020546" duration="2415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87090000" />
+    <option name="totallyTimeSpent" value="89505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -273,6 +287,95 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="390" column="18" lean-forward="false" selection-start-line="390" selection-start-column="18" selection-end-line="390" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#4;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#0;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#4;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#5;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#6;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#7;n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="394" column="82" lean-forward="false" selection-start-line="394" selection-start-column="82" selection-end-line="394" selection-end-column="82" />
+          <folding>
+            <element signature="e#187#513#0" expanded="false" />
+            <element signature="e#530#625#0" expanded="false" />
+            <element signature="e#642#2239#0" expanded="false" />
+            <element signature="e#1151#2021#0" expanded="false" />
+            <element signature="e#2262#7432#0" expanded="false" />
+            <element signature="e#2394#3631#0" expanded="false" />
+            <element signature="e#3853#4707#0" expanded="false" />
+            <element signature="e#3955#4092#0" expanded="false" />
+            <element signature="e#4114#4217#0" expanded="false" />
+            <element signature="e#4238#4344#0" expanded="false" />
+            <element signature="e#4730#5130#0" expanded="false" />
+            <element signature="e#5739#5861#0" expanded="false" />
+            <element signature="e#6842#6980#0" expanded="false" />
+            <element signature="e#7005#7162#0" expanded="false" />
+            <element signature="e#7298#7432#0" expanded="false" />
+            <element signature="e#7457#10423#0" expanded="false" />
+            <element signature="e#8326#10423#0" expanded="false" />
+            <element signature="e#8763#8870#0" expanded="false" />
+            <element signature="e#10718#11958#0" expanded="false" />
+            <element signature="e#11451#11669#0" expanded="false" />
+            <element signature="e#11974#12496#0" expanded="false" />
+            <element signature="e#13135#13413#0" expanded="false" />
+            <element signature="e#13426#13575#0" expanded="false" />
+            <element signature="e#13840#14207#0" expanded="false" />
+            <element signature="e#14224#14301#0" expanded="false" />
+            <element signature="e#14321#14395#0" expanded="false" />
+            <element signature="e#14413#14488#0" expanded="false" />
+            <element signature="e#14509#14581#0" expanded="false" />
+            <element signature="e#14597#14657#0" expanded="false" />
+            <element signature="e#14674#14845#0" expanded="false" />
+            <element signature="e#15140#15400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurora.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3875">
+          <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -842,8 +945,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aurora.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+        <state relative-caret-position="88">
+          <caret line="125" column="13" lean-forward="false" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aurora1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding />
         </state>
       </provider>
