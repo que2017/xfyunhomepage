@@ -27,10 +27,10 @@
         this.r = color.r;
         this.g = color.g;
         this.b = color.b;
-        this.overflow = 200;
+        this.overflow = 0;
         this.width = this.overflow + width;
         this.height = this.overflow + height;
-        this.speed = 30;
+        this.speed = 20;
         this.h = randomNum(50, 80);
         this.params = [];
         this.dParams = [];
@@ -42,7 +42,7 @@
         p3.y = randomNum(0, this.height);
         this.dx = Math.abs(p0.x - p3.x);
         this.minX = Math.min(p0.x, p3.x);
-        this.maxX = Math.max(p0.x, p3.x)
+        this.maxX = Math.max(p0.x, p3.x);
         p1.x = randomNum(this.minX, this.maxX);
         p1.y = randomNum(0, this.height);
         p2.x = randomNum(this.minX, this.maxX);
@@ -93,12 +93,12 @@
             var r = this.r + randomNum(-colorGrand, colorGrand);
             var g = this.g + randomNum(-colorGrand, colorGrand);
             var b = this.b + randomNum(-colorGrand, colorGrand);
-            var a = 0.7 + randomNum(-1, 1) * 0.1;
+            var a = 0.5 + randomNum(-1, 1) * 0.1;
             var rgba0 = 'rgba(' + r + ',' + g + ',' + b + ', 0)';
             var rgba1 = 'rgba(' + r + ',' + g + ',' + b + ', ' + a + ')';
             cxt.save();
             cxt.beginPath();
-            var color = cxt.createLinearGradient(this.minX, 0, this.maxX, 0);
+            var color = cxt.createLinearGradient(this.minX, 0, this.maxX, height);
             color.addColorStop(0, rgba0);
             color.addColorStop(0.5, rgba1);
             color.addColorStop(1, rgba0);
@@ -110,12 +110,13 @@
             cxt.bezierCurveTo(this.params[1].x,this.params[1].y + this.h,this.params[2].x,this.params[2].y + this.h,this.params[3].x,this.params[3].y + this.h);
             cxt.lineTo(this.params[3].x,this.params[3].y - this.h);
             cxt.closePath();
-            cxt.fill();//Rect(x, y - this.h, 1, 2 * this.h);
+            cxt.fill();
             cxt.restore();
         }
     };
     var aurora = [];
     aurora.push(new BezireCurve({r: 80, g: 175, b: 100}));
+    aurora.push(new BezireCurve({r: 110, g: 25, b: 150}));
     aurora.push(new BezireCurve({r: 110, g: 25, b: 150}));
     aurora.push(new BezireCurve({r: 80, g: 175, b: 100}));
     setInterval(function () {
