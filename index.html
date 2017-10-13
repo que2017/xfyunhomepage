@@ -2,39 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="banner"><canvas class="aurora" width="500" height="200"></canvas></div>
+    <div class="banner">
+        <!--<canvas class="aurora" width="500" height="150"></canvas>-->
+        <div class="double-circle circle-size-1 left-0">
+            <div class="inner-delay-1 circle size-1"></div>
+            <div class="outer-delay-1 circle size-1"></div>
+        </div>
+        <div class="double-circle circle-size-1 left-1">
+            <div class="inner circle size-1"></div>
+            <div class="outer circle size-1"></div>
+        </div>
+        <div class="double-circle circle-size-0 left-2">
+            <div class="inner-delay-2 circle size-0"></div>
+            <div class="outer-delay-2 circle size-0"></div>
+        </div>
+        <div class="double-circle circle-size-2 right-0">
+            <div class="inner circle size-2"></div>
+            <div class="outer circle size-2"></div>
+        </div>
+        <div class="double-circle circle-size-0 right-1">
+            <div class="inner-delay-1 circle size-0"></div>
+            <div class="outer-delay-1 circle size-0"></div>
+        </div>
+        <div class="double-circle circle-size-2 right-2">
+            <div class="inner-delay-2 circle size-2"></div>
+            <div class="outer-delay-2 circle size-2"></div>
+        </div>
+        <div class="bg-blur"></div>
+        <div class="aurora-wrap">
+            <div class="green-round"></div>
+            <div class="blue-aurora"></div>
+            <div class="red-aurora"></div>
+            <div class="green-aurora"></div>
+        </div>
+    </div>
     <!-- 公告 -->
     <div class="notice">
         <ul class="notice-wrap">
             <li class="notice-elem">
                 <a href="" class="elem-link">
                     <p class="day"><b>25</b> / July</p>
-                    <span class="title">AI大学重磅上线<i class="icon">NEW</i></span>
-                    <p class="info">为AI爱好者们打造的专业学习平台</p>
+                    <span class="title-wrap">
+                        <span class="title">AI大学重磅上线重磅上线重磅上线重磅上线重磅上线</span>
+                        <i class="icon">NEW</i>
+                    </span>
+                    <p class="info">为AI爱好者们打造的专业学习平台学习平台学习平台学习平台学习平台</p>
                 </a>
             </li>
             <li class="notice-elem">
                 <a href="" class="elem-link">
                     <p class="day"><b>20</b> / July</p>
-                    <span class="title">1024 | 属于开发者的狂欢节<i class="icon">HOT</i></span>
+                    <span class="title-wrap">
+                        <span class="title">1024 | 属于开发者的狂欢节</span>
+                        <i class="icon">HOT</i>
+                    </span>
                     <p class="info">1024万扶持基金等你拿！</p>
                 </a>
             </li>
             <li class="notice-elem">
                 <a href="" class="elem-link">
                     <p class="day"><b>18</b> / July</p>
-                    <span class="title">人工智能让人“永生”</span>
+                    <span class="title-wrap">
+                        <span class="title">人工智能让人“永生”</span>
+                    </span>
                     <p class="info">这可能是近年来科技圈最感人的两个故事</p>
                 </a>
             </li>
             <li class="notice-elem last">
                 <a href="" class="elem-link">
                     <p class="day"><b>25</b> / July</p>
-                    <span class="title">共享生态 | 华为云</span>
+                    <span class="title-wrap">
+                        <span class="title">共享生态 | 华为云</span>
+                        <i class="icon">HOT</i>
+                    </span>
                     <p class="info">搭载讯飞AI技术的云端正式起航</p>
                 </a>
             </li>
@@ -47,162 +93,287 @@
             <p class="title-info">提供丰富完善的AI产品体系，专业的技术支持团队，即刻开启你的AI之旅吧！</p>
         </div>
         <ul class="teck-context">
-            <li class="context-show">
-                <ul class="show-wrap">
-                    <li>
-                        <a href="#" class="show-server">
-                            <p class="server-name"><i class="icon-speech-synth"></i>在线语音合成</p>
-                            <p class="sever-info">连续语音转文字服务；高识别率，支持发言及个性化定制</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="show-server">
-                            <p class="server-name"><i class="icon-speech-synth"></i>在线语音合成</p>
-                            <p class="sever-info">连续语音转文字服务；高识别率，支持发言及个性化定制</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="show-server">
-                            <p class="server-name"><i class="icon-speech-synth"></i>在线语音合成</p>
-                            <p class="sever-info">连续语音转文字服务；高识别率，支持发言及个性化定制</p>
-                        </a>
-                    </li>
-                </ul>
+            <li class="sever-item speech-synthesis-bg">
+                <div class="detail-wrap">
+                    <div class="sever">
+                        <div class="sever-logo speech-synthesis-logo"></div>
+                        <div class="sever-title">语音合成</div>
+                        <div class="sever-info">小身材，大智慧</div>
+                    </div>
+                    <ul class="sever-detail two-items">
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-synt"></span>
+                                <span class="list">在线语音合成</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-synt"></span>
+                                <span class="list">离线语音合成</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="context-show">
+                    <ul class="show-wrap speech-synthesis-bg show-on">
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>在线语音合成</p>
+                                <p class="sever-info">体验流畅清晰的云端在线文字转人声服务</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>离线语音合成</p>
+                                <p class="sever-info">响应及时的本地化离线文字转人声服务</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="sever-item speech-recog-bg">
-                <div class="sever">
-                    <div class="sever-logo voice-recog-logo"></div>
-                    <div class="sever-title">语音识别</div>
-                    <div class="sever-info">准确率98%以上</div>
+                <div class="detail-wrap">
+                    <div class="sever">
+                        <div class="sever-logo voice-recog-logo"></div>
+                        <div class="sever-title">语音识别</div>
+                        <div class="sever-info">准确率98%以上</div>
+                    </div>
+                    <ul class="sever-detail">
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-voice"></span>
+                                <span class="list">语音听写</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-micphone"></span>
+                                <span class="list">语音转写</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-wakeup"></span>
+                                <span class="list">语音唤醒</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="sever-detail">
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-voice"></span>
-                            <span class="list">语音听写</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-dialog"></span>
-                            <span class="list">离线命令词</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-dialog"></span>
-                            <span class="list">在线命令词</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="context-show">
+                    <ul class="show-wrap speech-recog-bg show-on">
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>语音听写</p>
+                                <p class="sever-info">连续短语音转文字服务；高识别率，支持方言及个性化词条定制</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>语音转写</p>
+                                <p class="sever-info">长段音频转文字服务；适配多种应用场景</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>语音唤醒</p>
+                                <p class="sever-info">通过唤醒词将休眠状态下的设备进入等待指令状态</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="sever-item speech-exten-bg">
-                <div class="sever">
-                    <div class="sever-logo speech-exten-logo"></div>
-                    <div class="sever-title">语音扩展</div>
-                    <div class="sever-info">随时、随地、随心</div>
+                <div class="detail-wrap">
+                    <div class="sever">
+                        <div class="sever-logo speech-exten-logo"></div>
+                        <div class="sever-title">语音扩展</div>
+                        <div class="sever-info">随时、随地、随心</div>
+                    </div>
+                    <ul class="sever-detail">
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-reading"></span>
+                                <span class="list">语音评测</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-translate"></span>
+                                <span class="list">机器翻译</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-understand"></span>
+                                <span class="list">语义理解</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="sever-detail">
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-wakeup"></span>
-                            <span class="list">语音唤醒</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-reading"></span>
-                            <span class="list">语音云</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-evaluation"></span>
-                            <span class="list">语音评测</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="context-show">
+                    <ul class="show-wrap speech-exten-bg show-on">
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>语音评测</p>
+                                <p class="sever-info">唯一通过国家语委鉴定并达到实用水平的语音评测技术</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>机器翻译</p>
+                                <p class="sever-info">模拟人脑翻译机制，生成流畅译文，支持语音到文本的翻译</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>语义理解</p>
+                                <p class="sever-info">可高度自定义的全双工多伦对话语义理解能力</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="sever-item speech-hardware-bg">
-                <div class="sever">
-                    <div class="sever-logo speech-hardware-logo"></div>
-                    <div class="sever-title">语音硬件</div>
-                    <div class="sever-info">小身材，大智慧</div>
+                <div class="detail-wrap">
+                    <div class="sever">
+                        <div class="sever-logo speech-hardware-logo"></div>
+                        <div class="sever-title">语音识别模块</div>
+                        <div class="sever-info">小身材，大智慧</div>
+                    </div>
+                    <ul class="sever-detail">
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-micarray"></span>
+                                <span class="list">麦克风阵列</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-voicechip"></span>
+                                <span class="list">语音合成芯片</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-offlinerecog"></span>
+                                <span class="list">离线识别模块</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="sever-detail">
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-ai-head"></span>
-                            <span class="list">二麦线性阵列</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-ai-head"></span>
-                            <span class="list">四麦线性阵列</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-ai-head"></span>
-                            <span class="list">六麦环形阵列</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="context-show">
+                    <ul class="show-wrap speech-hardware-bg show-on">
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>麦克风阵列</p>
+                                <p class="sever-info">提供硬件、软核方案解决智能硬件远场拾音问题</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>语音合成芯片</p>
+                                <p class="sever-info">业界领先的高集成度中英文语音合成芯片</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>离线识别模块</p>
+                                <p class="sever-info">支持语音识别、合成、播放等功能的智能语音芯片</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="sever-item pattern-recog-bg">
-                <div class="sever special-border">
-                    <div class="sever-logo pattern-recog-logo"></div>
-                    <div class="sever-title">模式识别</div>
-                    <div class="sever-info">闻声识人，一眼万年</div>
+                <div class="detail-wrap">
+                    <div class="sever special-border">
+                        <div class="sever-logo pattern-recog-logo"></div>
+                        <div class="sever-title">模式识别</div>
+                        <div class="sever-info">闻声识人，一眼万年</div>
+                    </div>
+                    <ul class="sever-detail two-items">
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-face-recog"></span>
+                                <span class="list">人脸识别</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-voiceprint-recog"></span>
+                                <span class="list">声纹识别</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="sever-detail">
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-face-recog"></span>
-                            <span class="list">人脸识别</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-voiceprint-recog"></span>
-                            <span class="list">声纹识别</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-voiceprint-recog"></span>
-                            <span class="list">声纹识别</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="context-show">
+                    <ul class="show-wrap pattern-recog-bg show-on">
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>人脸识别</p>
+                                <p class="sever-info">在线、离线场景下的人脸检测验证，识别率高达99%</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>声纹识别</p>
+                                <p class="sever-info">依托声纹模型，根据语音波形快速实现精准身份</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="sever-item basic-service-bg">
-                <div class="sever">
-                    <div class="sever-logo basic-service-logo"></div>
-                    <div class="sever-title">基础服务</div>
-                    <div class="sever-info">安全、便捷、强大</div>
+                <div class="detail-wrap">
+                    <div class="sever">
+                        <div class="sever-logo basic-service-logo"></div>
+                        <div class="sever-title">基础服务</div>
+                        <div class="sever-info">安全、便捷、强大</div>
+                    </div>
+                    <ul class="sever-detail">
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-storage"></span>
+                                <span class="list">云储存</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-xunpush"></span>
+                                <span class="list">讯推</span>
+                            </a>
+                        </li>
+                        <li class="detail-list">
+                            <a href="" class="list-link">
+                                <span class="icon icon-encrypt"></span>
+                                <span class="list">应用加密</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="sever-detail">
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-storage"></span>
-                            <span class="list">云储存</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-xunpush"></span>
-                            <span class="list">讯推</span>
-                        </a>
-                    </li>
-                    <li class="detail-list">
-                        <a href="" class="list-link">
-                            <span class="icon icon-update"></span>
-                            <span class="list">版本自动更新</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="context-show">
+                    <ul class="show-wrap basic-service-bg show-on">
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>云存储</p>
+                                <p class="sever-info">多IDC支持、99.99%稳定度的开放存储平台</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>迅推</p>
+                                <p class="sever-info">低成本、高并发、节流量、零丢失的App消息推送服务</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="show-server">
+                                <p class="server-name"><i class="icon-speech-synth"></i>应用加密</p>
+                                <p class="sever-info">全方位、自动化加密防护，保护App安全</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>
@@ -220,70 +391,81 @@
             <div class="blur-circle radius-20"></div>
             <ul class="list-wrap">
                 <li class="solution-item aiui-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/aiui.png"/>
                     <div class="item-name">AIUI</div>
                     <div class="item-hide">
-                        <p class="name">AIUI</p>
+                        <!--<p class="name">AIUI</p>-->
                         <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
                         <a href="" class="detail">查看详情</a>
                     </div>
                 </li>
                 <li class="solution-item robot-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/robot.png"/>
                     <div class="item-name">机器人</div>
                     <div class="item-hide">
-                        <p class="name">机器人</p>
+                        <!--<p class="name">机器人</p>-->
                         <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
                         <a href="" class="detail">查看详情</a>
                     </div>
                 </li>
                 <li class="solution-item custom-service-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/custom-service.png"/>
                     <div class="item-name">智能客服</div>
                     <div class="item-hide">
-                        <p class="name">智能客服</p>
+                        <!--<p class="name">智能客服</p>-->
                         <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
                         <a href="" class="detail">查看详情</a>
                     </div>
                 </li>
-                <li class="solution-item game-bg">
+                <li class="solution-item border-none game-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/game.png"/>
                     <div class="item-name">游戏</div>
                     <div class="item-hide">
-                        <p class="name">游戏</p>
+                        <!--<p class="name">游戏</p>-->
                         <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
                         <a href="" class="detail">查看详情</a>
                     </div>
                 </li>
-                <li class="solution-item medical-bg">
+                <li class="solution-item border-top medical-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/medical.png"/>
                     <div class="item-name">医疗</div>
                     <div class="item-hide">
-                        <p class="name">医疗</p>
+                        <!--<p class="name">医疗</p>-->
                         <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
                         <a href="" class="detail">查看详情</a>
                     </div>
                 </li>
-                <li class="solution-item authentication-bg">
-                    <div class="item-name">身份验证</div>
-                    <div class="item-hide">
-                        <p class="name">身份验证</p>
-                        <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
-                        <a href="" class="detail">查看详情</a>
+                <li class="solution-item border-top authentication-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/authentication.png"/>
+                    <div class="item-info-wrap">
+                        <div class="item-name">身份验证</div>
+                        <div class="item-hide">
+                            <!--<p class="name">身份验证</p>-->
+                            <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
+                            <a href="" class="detail">查看详情</a>
+                        </div>
                     </div>
                 </li>
-                <li class="solution-item education-bg">
+                <li class="solution-item border-top education-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/education.png"/>
                     <div class="item-name">教育</div>
                     <div class="item-hide">
-                        <p class="name">教育</p>
+                        <!--<p class="name">教育</p>-->
                         <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
                         <a href="" class="detail">查看详情</a>
                     </div>
                 </li>
-                <li class="solution-item government-bg">
+                <li class="solution-item border-top border-none government-bg">
+                    <img class="solution-item-bg" src="images/ai-solution/government.png"/>
                     <div class="item-name">政务</div>
                     <div class="item-hide">
-                        <p class="name">政务</p>
+                        <!--<p class="name">政务</p>-->
                         <p class="introduce">随着移动互联网的发展和物联网时代的到来，智能家居app应运而生。</p>
                         <a href="" class="detail">查看详情</a>
                     </div>
                 </li>
             </ul>
+            <div class="wrap-cover"></div>
         </div>
     </div>
     <!-- AI生态平台 -->
@@ -293,52 +475,98 @@
                 <h2 class="title-top">AI生态平台</h2>
                 <p class="title-info">致力于为创业团队提供技术支持、市场拓展、产业链资源、资本对接等全方位优质服务</p>
             </div>
-            <div class="introduce">
-                <ul class="list-wrap">
-                    <li class="intro-list">
-                        <a href="" class="list">
-                            <i class="icon icon-news"></i>
-                            <div class="content">
-                                <p class="title">技术支持</p>
-                                <p class="info">讯飞高阶服务开放，VIP一对一专属对接，最新技术优先测试接入</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="intro-list">
-                        <a href="" class="list">
-                            <i class="icon icon-camp"></i>
-                            <div class="content">
-                                <p class="title">CEO训练营</p>
-                                <p class="info">讯飞创始人团队私董会，创业成功经验分享，团队管理经验输出</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="intro-list">
-                        <a href="" class="list">
-                            <i class="icon icon-tutor"></i>
-                            <div class="content">
-                                <p class="title">产业导师</p>
-                                <p class="info">讯飞产业导师一对一指导，产业资源优先配置</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="intro-list">
-                        <a href="" class="list">
-                            <i class="icon icon-connection"></i>
-                            <div class="content">
-                                <p class="title">资本对接</p>
-                                <p class="info">项目精准推送，BP诊断，创业路演系列活动</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+            <div class="platform-bg-wrap clearfix">
+                <div class="introduce">
+                    <div class="cover-wrap">
+                        <p class="title-sub">粒子空间</p>
+                        <p class="info-main">讯飞创业资源平台，提供创业指导，技术分享、创业企业服务，助力团队快速成长。</p>
+                        <ul class="list-wrap">
+                            <li class="intro-list">
+                                <a href="" class="list">
+                                    <i class="icon icon-news"></i>
+                                    <div class="content">
+                                        <p class="title">技术支持</p>
+                                        <p class="info">讯飞高阶服务开放，VIP一对一专属对接，最新技术优先测试接入</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-list">
+                                <a href="" class="list">
+                                    <i class="icon icon-camp"></i>
+                                    <div class="content">
+                                        <p class="title">CEO训练营</p>
+                                        <p class="info">讯飞创始人团队私董会，创业成功经验分享，团队管理经验输出</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-list">
+                                <a href="" class="list">
+                                    <i class="icon icon-tutor"></i>
+                                    <div class="content">
+                                        <p class="title">产业导师</p>
+                                        <p class="info">讯飞产业导师一对一指导，产业资源优先配置</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="intro-list">
+                                <a href="" class="list">
+                                    <i class="icon icon-connection"></i>
+                                    <div class="content">
+                                        <p class="title">资本对接</p>
+                                        <p class="info">项目精准推送，BP诊断，创业路演系列活动</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="circle"></div>
+                </div>
+                <div class="nephogram">
+                <div class="cover-wrap">
+                    <p class="title-sub">创星云图</p>
+                    <p class="info-main">讯飞创业资源平台，提供创业指导，技术分享、创业企业服务，助力团队快速成长。</p>
+                    <ul class="list-wrap">
+                        <li class="intro-list">
+                            <a href="" class="list">
+                                <i class="icon icon-news"></i>
+                                <div class="content">
+                                    <p class="title">技术支持</p>
+                                    <p class="info">讯飞高阶服务开放，VIP一对一专属对接，最新技术优先测试接入</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="intro-list">
+                            <a href="" class="list">
+                                <i class="icon icon-camp"></i>
+                                <div class="content">
+                                    <p class="title">CEO训练营</p>
+                                    <p class="info">讯飞创始人团队私董会，创业成功经验分享，团队管理经验输出</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="intro-list">
+                            <a href="" class="list">
+                                <i class="icon icon-tutor"></i>
+                                <div class="content">
+                                    <p class="title">产业导师</p>
+                                    <p class="info">讯飞产业导师一对一指导，产业资源优先配置</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="intro-list">
+                            <a href="" class="list">
+                                <i class="icon icon-connection"></i>
+                                <div class="content">
+                                    <p class="title">资本对接</p>
+                                    <p class="info">项目精准推送，BP诊断，创业路演系列活动</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="circle"></div>
             </div>
-            <div class="nephogram">
-            <div class="cover-bg">
-                <p class="title">创星云图</p>
-                <p class="info">讯飞创业资源平台，提供创业指导，技术分享、创业企业服务，助力团队快速成长。</p>
             </div>
-        </div>
         </div>
     </div>
     <!-- 技术优势 -->
@@ -355,7 +583,9 @@
                         <p class="info">作为人工智能云服务的开拓者，我们率先将先进的人工智能核心技术通过互联网云服务对外提供</p>
                     </div>
                     <i class="icon icon-location"></i>
-                    <div class="line left-top"></div>
+                    <div class="line left-top">
+                        <div class="ball"></div>
+                    </div>
                 </div>
                 <div class="feature">
                     <div class="detail">
@@ -363,7 +593,9 @@
                         <p class="info">作为中文语音产业的引领者，我们主导编制《中文语音识别、合成互联网服务接口规范》等国家标准</p>
                     </div>
                     <i class="icon icon-zip"></i>
-                    <div class="line left-bottom"></div>
+                    <div class="line left-bottom">
+                        <div class="ball"></div>
+                    </div>
                 </div>
             </div>
             <div class="right-part">
@@ -373,7 +605,9 @@
                         <p class="info">先进的云计算、大数据技术为语音服务的稳定运行全程护航，轻松应对亿万级别用户服务</p>
                     </div>
                     <i class="icon icon-restart"></i>
-                    <div class="line right-top"></div>
+                    <div class="line right-top">
+                        <div class="ball"></div>
+                    </div>
                 </div>
                 <div class="feature">
                     <div class="detail">
@@ -381,10 +615,14 @@
                         <p class="info">WebAPI、android、iOS、Linux、Java SDK等接入方式助您以最小的开发成本快速接入语音服务</p>
                     </div>
                     <i class="icon icon-data-transfer"></i>
-                    <div class="line right-bottom"></div>
+                    <div class="line right-bottom">
+                        <div class="ball"></div>
+                    </div>
                 </div>
             </div>
-            <div class="center-circle"></div>
+            <div class="center-circle">
+                <img class="center-circle-img" src="images/teck-advantage/center-circle.png"/>
+            </div>
         </div>
     </div>
     <!-- 合作伙伴 -->
@@ -394,20 +632,30 @@
             <p class="title-info">科大讯飞秉持开发的心态，持续建立生态链、产业链，实现资源充分共享<br/>加入我们，和他们一起共享AI生态！</p>
         </div>
         <ul class="partner-wrap">
-            <li class="name"><img src="images/partners/futus.png"/></li>
-            <li class="name"><img src="images/partners/state grid.png"/></li>
-            <li class="name"><img src="images/partners/huaxia bank.png"/></li>
-            <li class="name"><img src="images/partners/bank of china.png"/></li>
-            <li class="name"><img src="images/partners/gf securities.png"/></li>
-            <li class="name"><img src="images/partners/webank.png"/></li>
-            <li class="name"><img src="images/partners/yohobuy.png"/></li>
-            <li class="name"><img src="images/partners/pander live.png"/></li>
-            <li class="name"><img src="images/partners/china unicom.png"/></li>
-            <li class="name"><img src="images/partners/kuaishou.png"/></li>
-            <li class="name"><img src="images/partners/dianping.png"/></li>
-            <li class="name"><img src="images/partners/didi.png"/></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
+            <li class="name"></li>
         </ul>
     </div>
-    <script src="js/aurora.js"></script>
+    <!-- 右侧悬浮框 -->
+    <div class="suspension">
+        <div class="dog-head"></div>
+        <div class="choice information"></div>
+        <div class="choice work-order"></div>
+        <div class="dog-hands"></div>
+        <div class="wechat-img"></div>
+    </div>
+    <!-- 返回顶部 -->
+    <div class="back-top"></div>
+    <script src="js/index.js"></script>
 </body>
 </html>

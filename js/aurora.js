@@ -10,7 +10,7 @@
         this.g = color.g;
         this.b = color.b;
         this.distance = randomNum(30, 60); // 曲线横向最大宽度
-        this.speed = 20;// 曲线参数增量最大值
+        this.speed = 50;// 曲线参数增量最大值
         this.h = randomNum(30, 60); // 曲线扩展成面的宽度
         this.params = []; //贝塞尔曲线参数
         this.dParams = [];// 贝塞尔曲线参数增量
@@ -104,7 +104,7 @@
                 var r = this.r;//+ randomNum(-colorGrand, colorGrand);
                 var g = this.g; //+ randomNum(-colorGrand, colorGrand);
                 var b = this.b; //+ randomNum(-colorGrand, colorGrand);
-                var a = 0.5 + randomNum(-1, 1) * 0.1;
+                var a = 0.7 + randomNum(-1, 1) * 0.1;
                 var rgba0 = 'rgba(' + r + ',' + g + ',' + b + ', 0)';
                 var rgba1 = 'rgba(' + r + ',' + g + ',' + b + ', ' + a + ')';
                 cxt.save();
@@ -129,7 +129,7 @@
         }
     };
     var aurora = [];
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 5; i++) {
         aurora.push(new BezireCurve({r: 80, g: 175, b: 100}));
         // aurora.push(new BezireCurve({r: 110, g: 25, b: 150}));
     }
@@ -138,7 +138,7 @@
         for (var i = 0; i < aurora.length; i++) {
             aurora[i].draw();
         }
-    }, 100);
+    }, 20);
 
     function randomNum(min, max) {
         return parseInt(Math.random() * (max - min) + min);
