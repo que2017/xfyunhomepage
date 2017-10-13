@@ -610,6 +610,88 @@ a
   position: relative
   width: 100%
   background: #fff url('../images/ecol-platform/ai-ecol-platform-bg.png') top center/1920px auto no-repeat
+  .star-circle-wrap
+    position: absolute
+    left: 50%
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: #fff
+    .star-circle
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      box-shadow: 0 0 15px rgba(47,204,255,0.5)
+      background: radial-gradient(rgba(47,204,255,0.7),rgba(47,204,255,0.2))
+      opacity: 0
+    @keyframes star-circle-fade
+      0%
+        transform: scale(0,0)
+        opacity: 0
+      40%
+        transform: scale(1,1)
+        opacity: 1
+      80%
+        transform: scale(0,0)
+        opacity: 0
+      100%
+        transform: scale(0,0)
+        opacity: 0
+  .left-circle-0
+    top: 44px
+    margin-left: -826px
+    .star-circle
+      animation: star-circle-fade 8s linear infinite
+  .left-circle-1
+    top: 539px
+    margin-left: -849px
+    .star-circle
+      animation: star-circle-fade 8s linear 2s infinite
+  .left-circle-2
+    top: 675px
+    margin-left: -809px
+    .star-circle
+      animation: star-circle-fade 8s linear 4s infinite
+  .left-circle-3
+    top: 311px
+    margin-left: -718px
+    .star-circle
+      animation: star-circle-fade 8s linear 6s infinite
+  .left-circle-4
+    top: 234px
+    margin-left: -626px
+    .star-circle
+      animation: star-circle-fade 8s linear infinite
+  .left-circle-5
+    top: 1px
+    margin-left: -510px
+    .star-circle
+      animation: star-circle-fade 8s linear 2s infinite
+  .right-circle-0
+    top: 296px
+    margin-left: 644px
+    .star-circle
+      animation: star-circle-fade 8s linear infinite
+  .right-circle-1
+    top: 136px
+    margin-left: 666px
+    .star-circle
+      animation: star-circle-fade 8s linear 2s infinite
+  .right-circle-2
+    top: 528px
+    margin-left: 725px
+    .star-circle
+      animation: star-circle-fade 8s linear 4s infinite
+  .right-circle-3
+    top: 9px
+    margin-left: 795px
+    .star-circle
+      animation: star-circle-fade 8s linear 6s infinite
+  .right-circle-4
+    top: 456px
+    margin-left: 839px
+    .star-circle
+      animation: star-circle-fade 8s linear infinite
   .platform-wrap
     width: 1200px
     padding: 100px 0 64px 0
