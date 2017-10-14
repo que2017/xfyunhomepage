@@ -48,7 +48,7 @@ a {
   position: relative;
   width: 100%;
   height: 575px;
-  background: url("../images/bg.png") no-repeat bottom center;
+  background: url("../images/bg-1024.png") no-repeat bottom center;
   overflow: hidden; }
   .banner .double-circle {
     position: absolute;
@@ -141,7 +141,7 @@ a {
     left: 0;
     width: 100%;
     height: 283px;
-    background: url("../images/bg-blur.png") no-repeat bottom center; }
+    background: url("../images/bg-1024-blur.png") no-repeat bottom center; }
   .banner .aurora-wrap {
     position: absolute;
     top: 306px;
@@ -595,7 +595,8 @@ a {
 .ai-ecol-platform {
   position: relative;
   width: 100%;
-  background: #fff url("../images/ecol-platform/ai-ecol-platform-bg.png") top center/1920px auto no-repeat; }
+  background: #fff url("../images/ecol-platform/ai-ecol-platform-bg.png") top center/1920px auto no-repeat;
+  overflow: hidden; }
   .ai-ecol-platform .star-circle-wrap {
     position: absolute;
     left: 50%;
