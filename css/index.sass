@@ -936,10 +936,13 @@ a
       margin-left: -110px
       //border: 1px solid #32cdf3
       border-radius: 50%
+      font-size: 0
       background: url('../images/yun.png') center 40px/192px auto no-repeat
       .center-circle-img
         width: 100%
-        animation: circle-move 3s linear infinite
+      .circle-trans
+        transition: all 0.5s
+        //animation: circle-move 3s linear infinite
     @keyframes circle-move
       from
         transform: rotateZ(360deg)

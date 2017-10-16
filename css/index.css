@@ -48,7 +48,7 @@ a {
   position: relative;
   width: 100%;
   height: 575px;
-  background: url("../images/bg-1024.png") no-repeat bottom center;
+  background: url("../images/bg.png") no-repeat bottom center;
   overflow: hidden; }
   .banner .double-circle {
     position: absolute;
@@ -141,7 +141,7 @@ a {
     left: 0;
     width: 100%;
     height: 283px;
-    background: url("../images/bg-1024-blur.png") no-repeat bottom center; }
+    background: url("../images/bg-blur.png") no-repeat bottom center; }
   .banner .aurora-wrap {
     position: absolute;
     top: 306px;
@@ -595,8 +595,7 @@ a {
 .ai-ecol-platform {
   position: relative;
   width: 100%;
-  background: #fff url("../images/ecol-platform/ai-ecol-platform-bg.png") top center/1920px auto no-repeat;
-  overflow: hidden; }
+  background: #fff url("../images/ecol-platform/ai-ecol-platform-bg.png") top center/1920px auto no-repeat; }
   .ai-ecol-platform .star-circle-wrap {
     position: absolute;
     left: 50%;
@@ -920,10 +919,12 @@ a {
       height: 219px;
       margin-left: -110px;
       border-radius: 50%;
+      font-size: 0;
       background: url("../images/yun.png") center 40px/192px auto no-repeat; }
       .teck-advantage .features .center-circle .center-circle-img {
-        width: 100%;
-        animation: circle-move 3s linear infinite; }
+        width: 100%; }
+      .teck-advantage .features .center-circle .circle-trans {
+        transition: all 0.5s; }
 @keyframes circle-move {
   from {
     transform: rotateZ(360deg); }
